@@ -4,7 +4,7 @@ import Services from './components/Services'
 import NavBar from './components/NavBar'
 const App = () => {
   return (
-    <main>
+    <main className='overflow-x-hidden overflow-y-scroll scrollbar-hide'>
       <NavBar />
        <Hero />
        <Services />
