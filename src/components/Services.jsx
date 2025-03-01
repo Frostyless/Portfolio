@@ -21,10 +21,10 @@ const Services = () => {
   return (
     <div id="services"className=' flex flex-col bg-black min-h-screen p-10 text-white'> 
      <div className="max-w-4xl mx-auto mt-5 ">
-        <div className=' md:ml-0 md:pl-6 lg:pl-10 p-6 flex w-full  items-center justify-center md:justify-start lg:justify-start  '>
+        <div className=' p-6 flex w-full items-center justify-center md:justify-start lg:justify-start  '>
             <h1 ref={serviceRef} className='text-7xl font-semi-bold mb-10 tracking-wide font-plex-mono'>Services</h1>
         </div>
-        <div className="flex  flex-col md:flex-row gap-12 w-full items-center justify-center ">
+        <div className="flex flex-col md:flex-row gap-12 w-full items-center justify-center ">
         <ServiceCard
           price="$200+"
           title="Brand Identity & Logo Design"
@@ -59,7 +59,7 @@ function ServiceCard ({price, title, description, items}) {
         )
     })
     return (
-        <div ref={(el) => cardRef.current.push(el)}  className=' border border-white/50 bg-gray-100 p-12 rounded-2xl w-full max-w-sm md:max-w-md lg:max-w-lgborder border-gray-white relative '>
+        <div ref={(el) => cardRef.current.push(el)}  className=' border border-white/50 bg-gray-100 p-12 rounded-2xl w-full min-w-sm md:max-w-md lg:max-w-lgborder border-gray-white relative '>
             <div className='text-sm border border-white/50 px-2 py-1 rounded-md inline-block'>
                 {price}
             </div>
