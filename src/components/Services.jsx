@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <div id="services"className=' flex flex-col bg-black min-h-screen p-10 text-white'> 
      <div className="max-w-4xl mx-auto mt-5 ">
-        <div className=' md:ml-0 md:pl-6 lg:pl-10 p-6 flex w-full  justify-center md:justify-start lg:justify-start  '>
+        <div className=' md:ml-0 md:pl-6 lg:pl-10 p-6 flex w-full  items-center justify-center md:justify-start lg:justify-start  '>
             <h1 ref={serviceRef} className='text-7xl font-semi-bold mb-10 tracking-wide font-plex-mono'>Services</h1>
         </div>
         <div className="flex  flex-col md:flex-row gap-12 w-full items-center justify-center ">
